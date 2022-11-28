@@ -1,0 +1,14 @@
+errors:
+  errServiceAlreadyExists:
+    fail: Directory `{{ .name }}` already exists.
+    what:
+      - "Please choose a different name."
+      - "Or delete the existing directory."
+      - "Or use the `--force` flag to overwrite the existing directory."
+
+
+  errServiceInternal:
+    fail: Internal error occurred.
+    what:
+      - "Please report this issue to: @admin"
+      - "Error: {{ .error }}"
